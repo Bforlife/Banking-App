@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Banking.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking</title>
+</head>
+<body>
+
+    <!-- // overall container -->
+    <div id="container">   
+        <!-- //this is the navigation bar -->
+        <div class="welcome_section">
+     <div class="nav_bar">
+        <nav> Good day,<label class="userNamelable">Lexir</label></nav>
+     </div>
+     <div class="nav_bar">
+        <img src="pics/STUDIO LOGO.png" width="80" alt="">
+     </div>
+     <div class="nav_bar">
+        <div class="user_btn"><input type="text" placeholder="USERNAME" id="input_userName"></div>
+        <div class="user_btn"><input type="text" placeholder="PIN" id="input_Pin" ></div>
+        <div class="user_btn">
+            <button id="login_button">&#8594;</button> </div>
+     </div>
+     </div>
+    <!-- 2nd container   -->
+     <div class="main_transfer">
+     <!-- //this is the balance container -->
+     <div id="balance">
+
+        <div class="account_balance"><span style="color: green;"> Balance:</span>
+
+            <div class="amount"><span><label id="currentBal_dollars">$0.00</label></span>
+            </div>
+        </div>
+        
+
+        <div class="total_dbt">
+            <h5 style="color:brown">MoneyOut: <span class="outgoing">$0.00</span> </h5>
+
+        </div>
+     </div>
+
+
+     <!-- // This field is for account summation -->
+     <div class="transction_section">
+        <div class="account_history">
+
+            
+
+    
+             <!-- <div id="expenditure"> <p class="type withdraw">Withdrawal</p>
+                   
+                <span>-$30</span>
+            </div>
+            <div id="expenditure"><p class="type deposit">Deposit</p>
+            <span>$200</span>
+            </div>
+        
+         <div id="expenditure"><p class="type deposit">Deposit</p>
+            <span>$200</span>
+            </div> 
+            <div id="expenditure"><p class="type deposit">Deposit</p>
+            <span>$200</span>
+            </div>  -->
+      
+</div>
+        <!-- load funds into the account -->
+
+        <div class="iniate_expenditure">
+
+            <div class="transfer">
+
+
+           <div class="transfer_input">
+            <input type="text" id="transfer_to" placeholder="Account-Name"><br>
+            <span>Transfer to</span>
+           </div>
+
+           <div class="transfer_input">
+            <input type="text" id="amount" placeholder="Amount" ><br>
+            <span>Amount</span>
+           </div>
+            <button class="button">&#8594;</button>
+
+            </div>
+            <div class="deposit_funds">
+                
+                <div class="transfer_input">
+                    <input type="text" id="withdrawal_input"><br>
+                    <span>Withdrawal</span>
+                   </div>
+
+
+                   <button id="button_deposit">&#8594;</button>
+                </div>
+                <div class="credit_self">
+                    <div class="credit">
+                        <input type="text" class="credit-to-self"><br>
+                    <span>Credit</span>
+                    </div>
+
+                    <button class="button_credit">&#8594;</button>
+
+                </div>
+            </div>
+        </div>
+       
+        </div>
+        
+        </div>
+
+     
+     
+        
+
+</body>
+
+<script src="Banking.js"></script>
+</html>
